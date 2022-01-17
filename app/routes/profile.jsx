@@ -1,6 +1,6 @@
 import { Link } from "remix";
 
-export default function Index() {
+export default function Profile() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <h1>Select github user</h1>
@@ -18,9 +18,4 @@ export default function Index() {
       </ul>
     </div>
   );
-}
-
-export async function getUser(user) {
-  const postData = await fetch(`https://api.github.com/users/${user}`);
-  return { user, data: postData };
 }

@@ -11,7 +11,7 @@ export const loader = async ({ params }) => {
   return user;
 };
 
-export default function Index() {
+export default function UserProfile() {
   const user = useLoaderData();
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4", maxWidth: '728px', margin: '0 auto' }}>
